@@ -1,0 +1,1048 @@
+ /* comentario css */
+
+ /*-------------------------------------------------------------------------header ------------------------------*/
+
+ * {
+     margin: 0%;
+     padding: 0;
+ }
+
+
+ /*-----------------------------------Inicio bloque de encabezado de pagina */
+ /* -------Logo de la marca */
+ .logo {
+     width: 125%;
+     height: 80px;
+     margin-top: 5px;
+     margin-left: 5px;
+
+ }
+
+ header {
+     background-color: #456882;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     position: sticky;
+     top: 0px;
+ }
+
+ /*-------Titulo ER Estudio Roda */
+ .titulo {
+     width: 40%;
+     height: 80px;
+     color: white;
+     font-size: 2.5rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+ }
+
+ /* --------Menu de navegacion */
+ nav {
+     width: 50%;
+     height: 80px;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+ }
+
+ /*-------Link padre de navegacion */
+ ul {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+     text-decoration: none;
+     justify-content: space-evenly;
+     align-items: center;
+     margin-right: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* link hijo de navegacion */
+ header a {
+     color: white;
+     text-decoration: none;
+     font-size: 1.5rem;
+ }
+
+ /*----------------------------------fin de bloque de encabezado de pagina------------*/
+
+ /*---------------------------------Inicio de bloque de contenido de pagina--- main-----------------------------------------*/
+
+ main {
+
+     background-color: whitesmoke;
+     margin: 5px;
+
+ }
+
+ /*----seccion home que abarca toda la pagina de inicio en un solo bloque-----*/
+ .homesession {
+     display: grid;
+     grid-template-areas:
+         "titulo1 titulo1 titulo1 titulo1 titulo1"
+         "titulo2 titulo2 titulo2 titulo2 titulo2"
+         "imagen1 imagen1 imagen1 imagen1 imagen1"
+         "texto1 texto1 texto1 texto1 texto1"
+         "titulo3 titulo3 titulo3 titulo3 titulo3"
+         "cliente1 cliente2 cliente3 cliente4 cliente5";
+     /*-- ancho de cada columna */
+     grid-template-columns: repeat(5, 18%);
+
+     /* alto de cada columna */
+     grid-template-rows: 250px 80px 600px 200px 100px 300px;
+
+     /* acomodar el grid completo */
+     justify-content: center;
+     /* eje horizontal */
+     justify-items: center;
+     /* eje vertical */
+     align-items: center;
+ }
+
+ .homesession img {
+     width: 80%;
+     height: 90%;
+     padding: 10px 1px 10px 5px;
+     border-radius: 73px 73px 73px 73px;
+     -webkit-border-radius: 73px 73px 73px 73px;
+     -moz-border-radius: 73px 73px 73px 73px;
+     box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+     -webkit-box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+     -moz-box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+     align-items: center;
+ }
+
+ /*-----presen hace referencia al titulo de bienvenida de la pagina-----*/
+ .titulo1 {
+     padding: 30px 10px 30px 70px;
+     font-size: 4rem;
+     color: black;
+     align-items: center;
+     font-family: 'Times New Roman', Times, serif;
+     justify-content: center;
+     text-shadow: -1px 6px 4px rgba(0, 0, 0, 0.51);
+
+     grid-area: titulo1;
+ }
+
+ .titulo2 {
+     font-size: 3rem;
+     color: rgb(5, 5, 5);
+     justify-content: center;
+     align-items: center;
+     border-radius: 74px 74px 74px 74px;
+     -webkit-border-radius: 74px 74px 74px 74px;
+     -moz-border-radius: 74px 74px 74px 74px;
+     grid-area: titulo2;
+ }
+
+ /*-----imagen representativa del titulo de bienvenida de la pagina-----*/
+ .imagen1 {
+     grid-area: imagen1;
+ }
+
+ /*----- breve info del nacimiento de roda estudio -------*/
+ .texto1 {
+     padding: 30px 10px 30px 70px;
+     font-size: 2.5rem;
+     color: rgb(5, 5, 5);
+     justify-content: center;
+     align-items: center;
+     grid-area: texto1;
+ }
+
+ .titulo3 {
+     background-color: yellow;
+     color: black;
+     font-size: 3rem;
+     font-family: Arial, Helvetica, sans-serif;
+     border-radius: 62px 62px 62px 62px;
+     -webkit-border-radius: 62px 62px 62px 62px;
+     -moz-border-radius: 62px 62px 62px 62px;
+     grid-area: titulo3;
+ }
+
+ /*------------ Espesificacion de area de imagenes de clientes------------*/
+ .cliente1 {
+     grid-area: cliente1;
+ }
+
+ .cliente2 {
+     grid-area: cliente2;
+ }
+
+ .cliente3 {
+     grid-area: cliente3;
+ }
+
+ .cliente4 {
+     grid-area: cliente4;
+ }
+
+ .cliente5 {
+     grid-area: cliente5;
+ }
+
+ /* --------------------------fin de main de Home----------------------*/
+
+ /*---------------Comienzo de seccion contenido de quienes somos 2 html de la pagina----------------------------*/
+
+ .quienessomos {
+     display: grid;
+     grid-template-areas:
+
+         "Daniela fotodani"
+         "familia parrafo1";
+
+     grid-template-columns: 45% 45%;
+
+     grid-template-rows: 350px 500px;
+
+     /* acomodar el grid completo */
+     justify-content: center;
+     /* eje horizontal */
+     justify-items: center;
+     /* eje vertical */
+     align-items: center;
+ }
+
+ .quienessomos img {
+     width: 40%;
+     height: 95%;
+     padding: 15px 0px 15px 0px;
+     border-radius: 0px 85px 0px 85px;
+ }
+
+ .Daniela {
+     color: black;
+     font-size: 4rem;
+     color: #000000;
+     text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+
+ }
+
+ .familia {
+     grid-area: familia;
+ }
+
+ .parrafo1 {
+     font-size: 1.5rem;
+     line-height: 1.4;
+     text-align: left;
+     padding: 10px 10px 10px 30px;
+     grid-area: parrafo1;
+ }
+
+
+ /*-------- Fin de seccion de Quienes somos----------------------------------*/
+
+ /*--------------Inicio de Servicios----------------------------------------*/
+
+ .servicios {
+     display: grid;
+     grid-template-areas:
+         "cetitulo  cetitulo  cetitulo  cetitulo"
+         "ceparrafo  ceparrafo  unioneuropea unioneuropea "
+         "h4  h4  h4 h4 "
+         "española  italiana polaca alemana "
+         "contratanos contratanos contratanos contratanos ";
+
+     grid-template-columns: 22% 22% 22% 22%;
+
+     grid-template-rows: 150px 600px 130px 400px 200px;
+
+     /* acomodar el grid completo */
+     justify-content: center;
+     /* eje horizontal */
+     justify-items: center;
+     /* eje vertical */
+     align-items: center;
+
+ }
+
+ .servicios img {
+     width: 90%;
+     height: 80%;
+     border-radius: 27px;
+     box-shadow: 13px 5px 10px 1px #000000;
+ }
+
+ .cetitulo {
+     width: 90%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     grid-area: cetitulo;
+     font-size: 4rem;
+     align-items: center;
+     letter-spacing: .15em;
+     color: #333333;
+     text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+
+ }
+
+ .ceparrafo {
+     width: 90%;
+     height: 90%;
+     padding: 10px 2px 3px 1px;
+     font-size: 1.3rem;
+     text-align: start;
+
+     grid-area: ceparrafo;
+ }
+
+ .ceparrafo p {
+     width: 90%;
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 5px 2px 3px 1px;
+ }
+
+ .ceparrafo h2 {
+     width: 90%;
+     padding: 15px 2px 10px 1px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-decoration: underline solid;
+     text-shadow: -12px 5px 13px #d7da41;
+ }
+
+ .ceparrafo h3 {
+     width: 90%;
+     padding: 6px 2px 10px 1px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-shadow: -12px 5px 13px #ecf006;
+
+ }
+
+ .ceparrafo ul {
+     width: 90%;
+     height: 200px;
+     font-size: 1.2rem;
+     text-align: start;
+     align-items: start;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 6px 2px 13px 1px;
+     line-height: 1, 2;
+     list-style: disc inside;
+
+ }
+
+ .unioneuropea {
+     grid-area: unioneuropea;
+ }
+
+ .h4 {
+     width: 90%;
+     height: 90%;
+     border-radius: 100px;
+     background-color: #FFDE63;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     font-size: 3rem;
+     color: black;
+     align-items: center;
+     grid-area: h4;
+ }
+
+ .española {
+     grid-area: española;
+ }
+
+ .es {
+     font-size: 1.5rem;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     grid-area: española;
+ }
+
+ .italiana {
+     grid-area: italiana;
+ }
+
+ .it {
+     font-size: 1.5rem;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     grid-area: italiana;
+ }
+
+ .polaca {
+     grid-area: polaca;
+ }
+
+ .po {
+     font-size: 1.5rem;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     grid-area: polaca;
+ }
+
+ .alemana {
+     grid-area: alemana;
+ }
+
+ .al {
+     font-size: 1.5rem;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     grid-area: alemana;
+ }
+
+ .contratanos {
+     width: 45%;
+     height: 60%;
+     font-size: 3rem;
+     color: black;
+     border-radius: 100px;
+     background-color: #93DA97;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     grid-area: contratanos;
+ }
+
+ /*-------------Fin de seccion de Servicios--------------------------------*/
+
+ /*----------------Inicio de seccion Asesorias---------------------------------*/
+ .asesorias {
+     display: grid;
+     grid-template-areas:
+         "aptitulo aptitulo aptitulo"
+         "aquienp aquienp aquienimg"
+         "at at at  "
+         "analisis analisisp analisisc "
+         "revision revisionp revisionc "
+     ;
+     grid-template-columns: 25% 40% 25%;
+
+     grid-template-rows: 200px 300px 150px 300px 300px;
+     /* acomodar el grid completo */
+     justify-content: center;
+     /* eje horizontal */
+     justify-items: center;
+     /* eje vertical */
+     align-items: center;
+ }
+
+ .aptitulo {
+     width: 90%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     font-size: 4rem;
+     color: #F97A00;
+     align-items: center;
+     text-shadow: 3px 5px 2px #474747;
+     grid-area: aptitulo;
+ }
+
+ .aquien {
+     background-color: antiquewhite;
+     width: 100%;
+     height: 90%;
+     padding: 10px 0px 10px 5px;
+     font-size: 1.6rem;
+     font-family: Arial, Helvetica, sans-serif;
+     text-decoration: underline solid;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     border-radius: 24px 0px 0px 24px;
+
+     grid-area: aquienp;
+ }
+
+ .aquienul {
+     background-color: antiquewhite;
+     width: 95%;
+     height: 50%;
+     padding: 0px 0px 10px 5px;
+     font-size: 1.2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: flex-start;
+     font-family: Arial, Helvetica, sans-serif;
+     list-style: disc inside;
+
+     grid-area: aquienp;
+ }
+
+ .aquienimg {
+     background-color: antiquewhite;
+     width: 100%;
+     height: 95%;
+     border-radius: 0px 24px 24px 0px;
+     grid-area: aquienimg;
+ }
+
+ .at {
+     width: 90%;
+     height: 60%;
+     border-radius: 100px;
+     background-color: #FFDE63;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     font-size: 3rem;
+     color: black;
+     align-items: center;
+     grid-area: at;
+ }
+
+ .analisis {
+     border-radius: 43px;
+     padding: 0px 0px 0px 20px;
+     width: 90%;
+     height: 90%;
+     font-size: 2.6rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     background-color: #05e0f0;
+     color: #FFFFFF;
+     text-shadow: 3px 5px 2px #474747;
+     grid-area: analisis;
+ }
+
+ .analisisp {
+     width: 90%;
+     height: 90%;
+     font-size: 1.5rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+
+     grid-area: analisisp;
+ }
+
+ .analisisc {
+     width: 90%;
+     height: 60%;
+     font-size: 2.5rem;
+     background-color: #93DA97;
+     color: black;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100px;
+     text-decoration: none;
+
+     grid-area: analisisc;
+ }
+
+ .revision {
+     border-radius: 43px;
+     padding: 0px 0px 0px 20px;
+     width: 90%;
+     height: 90%;
+     font-size: 2.5rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     background-color: #05e0f0;
+     color: #FFFFFF;
+     text-shadow: 3px 5px 2px #474747;
+     grid-area: revision;
+ }
+
+ .revisionp {
+     width: 90%;
+     height: 90%;
+     font-size: 1.5rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+     grid-area: revisionp;
+ }
+
+ .revisionc {
+     width: 90%;
+     height: 60%;
+     font-size: 2.5rem;
+     background-color: #93DA97;
+     color: black;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100px;
+     text-decoration: none;
+
+     grid-area: revisionc;
+ }
+
+ /*----------------Fin de seccion Asesorias-------------------------------------*/
+
+
+ /*----------------Inicio de seccion Contactos-----------------------------------*/
+
+
+
+
+
+
+ /*----------------Fin de seccion de Contactos-------------------------------*/
+
+
+
+ /*------------------------------------------------------------------------------Footer---------------------*/
+ footer {
+     width: 100%;
+     height: 100px;
+     background-color: #456882;
+     padding: 0px 10px 0px 10px;
+     align-items: center;
+     font-size: 1.5rem;
+     color: white
+ }
+
+ /*-----iconos de links a redes sociales de pie de pagina-------*/
+ footer img,
+ svg {
+     width: 60px;
+     border-radius: 200px 200px 200px 200px;
+     -webkit-border-radius: 200px 200px 200px 200px;
+     -moz-border-radius: 200px 200px 200px 200px;
+
+ }
+
+ /*----div class redes para modificar css en bloque-----*/
+ .redes {
+     align-items: center;
+     width: 50%;
+     height: 100px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around
+ }
+
+ /*-------Icono de whatsapp flotante-------*/
+ .wp {
+     position: fixed;
+     bottom: 30px;
+     right: 60px;
+
+ }
+
+ /* ----------------------- Fin de footer de pagina------------------------------------*/
+
+
+ /*----Comienzo de css mobile----*/
+
+ /*------header para mobile------ */
+
+ @media (max-width: 480px) {
+
+     body {
+         padding: 0;
+         margin: 0;
+         text-align: center;
+         box-sizing: border-box;
+     }
+
+     .logo {
+         width: 50px;
+         height: 50px;
+         margin-top: 2px;
+         margin-left: 2px;
+
+     }
+
+     header {
+         width: 100%;
+         height: 120px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         position: sticky;
+         top: 0px;
+
+     }
+
+     /*-------Titulo ER Estudio Roda */
+     .titulo {
+         width: 100%;
+         height: 80px;
+         color: white;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         font-size: 20px;
+
+     }
+
+     /* --------Menu de navegacion */
+     nav {
+         width: 100%;
+         height: 40px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         align-items: center;
+         font-size: 12px;
+     }
+
+     /*-------Link padre de navegacion */
+     ul {
+         width: 90%;
+         height: 90%;
+
+     }
+
+     /* link hijo de navegacion */
+     header a {
+         padding: 1px;
+         font-size: 13px;
+     }
+
+     /*------fin de header para mobile-----*/
+
+     /*----seccion home que abarca toda la pagina de inicio en un solo bloque-----*/
+
+     .homesession {
+         display: grid;
+         grid-template-areas:
+             "titulo1"
+             "titulo2"
+             "imagen1"
+             "texto1"
+             "titulo3"
+             "cliente1"
+             "cliente2"
+             "cliente3"
+             "cliente4"
+             "cliente5";
+         /*-- ancho de cada columna */
+         grid-template-columns: 90%;
+
+         /* alto de cada columna */
+         grid-template-rows: 100px 40px 300px 200px 60px repeat(5, 350px);
+
+     }
+
+     .homesession img {
+         width: 90%;
+         height: 80%;
+     }
+
+     /*-----presen hace referencia al titulo de bienvenida de la pagina-----*/
+     .titulo1 {
+         padding: 2px;
+         font-size: 1.2rem;
+     }
+
+     .titulo2 {
+         font-size: 0.8rem;
+     }
+
+     /*----- breve info del nacimiento de roda estudio -------*/
+     .texto1 {
+         font-size: 1rem;
+         padding: 2px;
+
+
+     }
+
+     .titulo3 {
+         font-size: 1rem;
+
+     }
+
+     /* --------------------------fin de main de Home----------------------*/
+
+     /*---------------Comienzo de seccion contenido de quienes somos 2 html de la pagina----------------------------*/
+
+
+
+     /*------------------------------------------------------------------------------Footer---------------------*/
+     footer {
+         width: 100%;
+         height: 100px;
+         padding: 0px;
+     }
+
+     footer p {
+         display: none;
+     }
+
+     /*-----iconos de links a redes sociales de pie de pagina-------*/
+     footer img,
+     svg {
+         width: 40px;
+
+     }
+
+     /*----div class redes para modificar css en bloque-----*/
+     .redes {
+         width: 60%;
+         height: 100px;
+         justify-content: space-evenly;
+     }
+
+     /*-------Icono de whatsapp flotante-------*/
+     .wp {
+         position: fixed;
+         bottom: 30px;
+         right: 30px;
+
+     }
+
+     /* ----------------------- Fin de footer de pagina------------------------------------*/
+
+     /*---------------Comienzo de seccion contenido de quienes somos 2 html de la pagina----------------------------*/
+
+     .quienessomos {
+         display: grid;
+         grid-template-areas:
+
+             "Daniela "
+             "fotodani"
+             "parrafo1"
+             "familia";
+
+         grid-template-columns: 90%;
+
+         grid-template-rows: 150px 600px 600px 800px;
+
+         /* acomodar el grid completo */
+         justify-content: center;
+         /* eje horizontal */
+         justify-items: center;
+         /* eje vertical */
+         align-items: center;
+     }
+
+     .quienessomos img {
+         width: 80%;
+         height: 90%;
+         padding: 10px 0px 10px 0px;
+
+     }
+
+     .Daniela {
+
+         font-size: 2.5rem;
+     }
+
+     .parrafo1 {
+         font-size: 1.1rem;
+         padding: 15px 5px 15px 30px;
+     }
+
+     /*-------- Fin de seccion de Quienes somos----------------------------------*/
+
+     /*--------------Inicio de Servicios----------------------------------------*/
+
+     .servicios {
+         display: grid;
+         grid-template-areas:
+             "cetitulo"
+             "ceparrafo"
+             "unioneuropea "
+             "h4"
+             "española "
+             "italiana "
+             "polaca "
+             "alemana "
+             "contratanos ";
+
+         grid-template-columns: 90%;
+
+         grid-template-rows: 150px 800px 400px 200px repeat(4, 300px) 150px;
+
+
+     }
+
+     .servicios img {
+         width: 80%;
+         height: 70%;
+
+     }
+
+     .cetitulo {
+         width: 90%;
+         font-size: 2.5rem;
+         align-items: center;
+
+     }
+
+     .ceparrafo {
+         width: 90%;
+         height: 90%;
+         padding: 10px 2px 3px 1px;
+         font-size: 1.1rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+
+     }
+
+     .ceparrafo h2 {
+         width: 100%;
+     }
+
+     .ceparrafo ul {
+         width: 90%;
+         height: 90%;
+         font-size: 1.1rem;
+         padding: 15px 2px 13px 20px;
+         line-height: normal;
+         list-style: disc inside;
+     }
+
+     .ceparrafo h3 {
+         width: 90%;
+         padding: 6px 2px 10px 1px;
+
+     }
+
+     .h4 {
+         font-size: 2rem;
+     }
+
+     .contratanos {
+         width: 90%;
+         height: 80%;
+         font-size: 2rem;
+
+     }
+
+     /*-------------Fin de seccion de Servicios--------------------------------*/
+
+     /*----------------Inicio de seccion Asesorias---------------------------------*/
+     .asesorias {
+         display: grid;
+         grid-template-areas:
+             "aptitulo"
+             "aquienp"
+             "aquienimg"
+             "at "
+             "analisis"
+             "analisisp"
+             "analisisc"
+             "revision"
+             "revisionp"
+             "revisionc "
+         ;
+         grid-template-columns: 90%;
+
+         grid-template-rows:
+             200px 400px 200px 250px 150px 300px 150px 150px 300px 150px;
+         /* acomodar el grid completo */
+         justify-content: center;
+         /* eje horizontal */
+         justify-items: center;
+         /* eje vertical */
+         align-items: center;
+
+
+
+     }
+
+     .aptitulo {
+         font-size: 2rem;
+
+     }
+
+     .aquien {
+         width: 99%;
+         height: 100%;
+         font-size: 1.2rem;
+         flex-direction: column;
+         justify-content: flex-start;
+         text-align: center;
+
+     }
+
+     .aquienul {
+         width: 99%;
+         height: 50%;
+         margin: 10px 10px 10px 10px;
+         font-size: 1rem;
+         justify-content: space-between;
+         text-align: start;
+     }
+
+     .aquienimg {
+         width: 99%;
+         height: 95%;
+
+     }
+
+     .at {
+         font-size: 1.8rem;
+
+     }
+
+     .analisis {
+         font-size: 2rem;
+
+     }
+
+     .analisisp {
+         font-size: 1.3rem;
+     }
+
+     .analisisc {
+         height: 80%;
+         font-size: 2rem;
+
+     }
+
+     .revision {
+         font-size: 2rem;
+     }
+
+     .revisionp {
+         font-size: 1.3rem;
+
+     }
+
+     .revisionc {
+         height: 80%;
+         font-size: 2rem;
+
+     }
+
+     /*----------------Fin de seccion Asesorias-------------------------------------*/
+
+
+     /*----------------Inicio de seccion Contactos-----------------------------------*/
+
+
+
+
+
+
+     /*----------------Fin de seccion de Contactos-------------------------------*/
+
+
+ }
