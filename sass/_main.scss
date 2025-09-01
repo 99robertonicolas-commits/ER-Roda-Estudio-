@@ -1,0 +1,605 @@
+main {
+
+    background-color: whitesmoke;
+    margin: 5px;
+
+}
+
+
+/*----seccion home que abarca toda la pagina de inicio en un solo bloque-----*/
+.homesession {
+    display: grid;
+    grid-template-areas:
+        "animate__animated animate__animated animate__animated animate__animated animate__animated"
+        "titulo2 titulo2 titulo2 titulo2 titulo2"
+        "imagen1 imagen1 imagen1 imagen1 imagen1"
+        "texto1 texto1 texto1 texto1 texto1"
+        "titulo3 titulo3 titulo3 titulo3 titulo3"
+        "cliente1 cliente2 cliente3 cliente4 cliente5";
+    /*-- ancho de cada columna */
+    grid-template-columns: repeat(5, 18%);
+
+    /* alto de cada columna */
+    grid-template-rows: 250px 80px 600px 200px 100px 300px;
+
+    /* acomodar el grid completo */
+    justify-content: center;
+    /* eje horizontal */
+    justify-items: center;
+    /* eje vertical */
+    align-items: center;
+
+    img {
+        width: 80%;
+        height: 90%;
+        padding: 10px 1px 10px 5px;
+        border-radius: 73px 73px 73px 73px;
+        -webkit-border-radius: 73px 73px 73px 73px;
+        -moz-border-radius: 73px 73px 73px 73px;
+        box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+        -webkit-box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+        -moz-box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+        align-items: center;
+    }
+
+    /*-----presen hace referencia al titulo de bienvenida de la pagina-----*/
+    .animate__animated {
+        padding: 30px 10px 30px 70px;
+        font-size: 4rem;
+        color: black;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        justify-content: center;
+        text-shadow: -1px 6px 4px rgba(0, 0, 0, 0.51);
+
+        grid-area: animate__animated;
+    }
+
+    .titulo2 {
+        font-size: 3rem;
+        color: rgb(5, 5, 5);
+        justify-content: center;
+        align-items: center;
+        border-radius: 74px 74px 74px 74px;
+        -webkit-border-radius: 74px 74px 74px 74px;
+        -moz-border-radius: 74px 74px 74px 74px;
+        grid-area: titulo2;
+    }
+
+    /*-----imagen representativa del titulo de bienvenida de la pagina-----*/
+    .imagen1 {
+        grid-area: imagen1;
+    }
+
+    /*----- breve info del nacimiento de roda estudio -------*/
+    .texto1 {
+        padding: 30px 10px 30px 70px;
+        font-size: 2.5rem;
+        color: rgb(5, 5, 5);
+        justify-content: center;
+        align-items: center;
+        grid-area: texto1;
+    }
+
+    .titulo3 {
+        background-color: yellow;
+        color: black;
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 62px 62px 62px 62px;
+        -webkit-border-radius: 62px 62px 62px 62px;
+        -moz-border-radius: 62px 62px 62px 62px;
+        grid-area: titulo3;
+    }
+
+    /*------------ Espesificacion de area de imagenes de clientes------------*/
+    .cliente1 {
+        grid-area: cliente1;
+    }
+
+    .cliente2 {
+        grid-area: cliente2;
+    }
+
+    .cliente3 {
+        grid-area: cliente3;
+    }
+
+    .cliente4 {
+        grid-area: cliente4;
+    }
+
+    .cliente5 {
+        grid-area: cliente5;
+    }
+}
+
+/* --------------------------fin de main de Home----------------------*/
+
+/*---------------Comienzo de seccion contenido de quienes somos 2do html de la pagina----*/
+
+.quienessomos {
+    display: grid;
+    grid-template-areas:
+
+        "Daniela fotodani"
+        "familia parrafo1";
+
+    grid-template-columns: 45% 45%;
+
+    grid-template-rows: 350px 500px;
+
+    /* acomodar el grid completo */
+    justify-content: center;
+    /* eje horizontal */
+    justify-items: center;
+    /* eje vertical */
+    align-items: center;
+
+    img {
+        width: 40%;
+        height: 95%;
+        padding: 15px 0px 15px 0px;
+        border-radius: 0px 85px 0px 85px;
+    }
+
+    .Daniela {
+        color: black;
+        font-size: 4rem;
+        color: #000000;
+        text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+
+    }
+
+    .familia {
+        grid-area: familia;
+    }
+
+    .parrafo1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: left;
+        padding: 10px 10px 10px 30px;
+        grid-area: parrafo1;
+    }
+
+
+}
+
+
+
+/*-------- Fin de seccion de Quienes somos----------------------------------*/
+
+/*--------------Inicio de Servicios----------------------------------------*/
+
+.servicios {
+    display: grid;
+    grid-template-areas:
+        "cetitulo  cetitulo  cetitulo  cetitulo"
+        "ceparrafo  ceparrafo  unioneuropea unioneuropea "
+        "h4  h4  h4 h4 "
+        "española  italiana polaca alemana "
+        "contratanos contratanos contratanos contratanos ";
+
+    grid-template-columns: 22% 22% 22% 22%;
+
+    grid-template-rows: 150px 700px 130px 400px 200px;
+
+    /* acomodar el grid completo */
+    justify-content: center;
+    /* eje horizontal */
+    justify-items: center;
+    /* eje vertical */
+    align-items: center;
+
+    img {
+        width: 90%;
+        height: 80%;
+        border-radius: 27px;
+        box-shadow: 13px 5px 10px 1px #000000;
+    }
+
+    .cetitulo {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-area: cetitulo;
+        font-size: 4rem;
+        align-items: center;
+        letter-spacing: .15em;
+        color: #333333;
+        text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .ceparrafo {
+        width: 90%;
+        height: 90%;
+        padding: 10px 2px 3px 1px;
+        font-size: 1.3rem;
+        text-align: start;
+
+        grid-area: ceparrafo;
+
+        p {
+            width: 90%;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 2px 3px 1px;
+        }
+
+        h2 {
+            width: 90%;
+            padding: 15px 2px 10px 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline solid;
+            text-shadow: -12px 5px 13px #d7da41;
+        }
+
+        ul {
+            width: 90%;
+            height: 200px;
+            font-size: 1.2rem;
+            text-align: start;
+            align-items: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 6px 2px 13px 1px;
+            line-height: 1, 2;
+            list-style: disc inside;
+        }
+
+        h3 {
+            width: 90%;
+            padding: 6px 2px 10px 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: -12px 5px 13px #ecf006;
+        }
+
+    }
+
+    .unioneuropea {
+        grid-area: unioneuropea;
+    }
+
+    .h4 {
+        width: 90%;
+        height: 70%;
+        border-radius: 100px;
+        background-color: #FFDE63;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 3rem;
+        color: black;
+        align-items: center;
+        grid-area: h4;
+    }
+
+    .española {
+        grid-area: española;
+    }
+
+    .es {
+        font-size: 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: española;
+    }
+
+    .italiana {
+        grid-area: italiana;
+    }
+
+    .it {
+        font-size: 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: italiana;
+    }
+
+    .polaca {
+        grid-area: polaca;
+    }
+
+    .po {
+        font-size: 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: polaca;
+    }
+
+    .alemana {
+        grid-area: alemana;
+    }
+
+    .al {
+        font-size: 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: alemana;
+    }
+
+    .contratanos {
+        width: 45%;
+        height: 60%;
+        font-size: 3rem;
+        color: black;
+        border-radius: 100px;
+        background-color: #93DA97;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        grid-area: contratanos;
+    }
+
+}
+
+/*-------------Fin de seccion de Servicios--------------------------------*/
+
+/*----------------Inicio de seccion Asesorias---------------------------------*/
+.asesorias {
+
+    display: grid;
+    grid-template-areas:
+        "aptitulo aptitulo aptitulo"
+        "aquienp aquienp aquienimg"
+        "at at at  "
+        "analisis analisisp analisisc "
+        "revision revisionp revisionc "
+    ;
+    grid-template-columns: 25% 40% 25%;
+
+    grid-template-rows: 200px 300px 150px 300px 300px;
+    /* acomodar el grid completo */
+    justify-content: center;
+    /* eje horizontal */
+    justify-items: center;
+    /* eje vertical */
+    align-items: center;
+
+    .aptitulo {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 4rem;
+        color: #F97A00;
+        align-items: center;
+        text-shadow: 3px 5px 2px #474747;
+        grid-area: aptitulo;
+    }
+
+    .aquien {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 90%;
+        padding: 10px 0px 10px 5px;
+        font-size: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-radius: 24px 0px 0px 24px;
+
+        grid-area: aquienp;
+    }
+
+    .aquienul {
+        background-color: antiquewhite;
+        width: 95%;
+        height: 50%;
+        padding: 0px 0px 10px 5px;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style: disc inside;
+
+        grid-area: aquienp;
+    }
+
+    .aquienimg {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 95%;
+        border-radius: 0px 24px 24px 0px;
+        grid-area: aquienimg;
+    }
+
+    .at {
+        width: 90%;
+        height: 60%;
+        border-radius: 100px;
+        background-color: #FFDE63;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 3rem;
+        color: black;
+        align-items: center;
+        grid-area: at;
+    }
+
+    .analisis {
+        border-radius: 43px;
+        padding: 0px 0px 0px 20px;
+        width: 90%;
+        height: 90%;
+        font-size: 2.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #05e0f0;
+        color: #FFFFFF;
+        text-shadow: 3px 5px 2px #474747;
+        grid-area: analisis;
+    }
+
+    .analisisp {
+        width: 90%;
+        height: 90%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        grid-area: analisisp;
+    }
+
+    .analisisc {
+        width: 90%;
+        height: 60%;
+        font-size: 2.5rem;
+        background-color: #93DA97;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        text-decoration: none;
+
+        grid-area: analisisc;
+    }
+
+    .revision {
+        border-radius: 43px;
+        padding: 0px 0px 0px 20px;
+        width: 90%;
+        height: 90%;
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #05e0f0;
+        color: #FFFFFF;
+        text-shadow: 3px 5px 2px #474747;
+        grid-area: revision;
+    }
+
+    .revisionp {
+        width: 90%;
+        height: 90%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        grid-area: revisionp;
+    }
+
+    .revisionc {
+        width: 90%;
+        height: 60%;
+        font-size: 2.5rem;
+        background-color: #93DA97;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        text-decoration: none;
+        grid-area: revisionc;
+    }
+
+}
+
+/*----------------Fin de seccion Asesorias-------------------------------------*/
+
+/*----------------Inicio de seccion Contactos-----------------------------------*/
+
+.contactos {
+    display: grid;
+    grid-template-areas:
+        "solicita solicita "
+        "imagenform ayudarte "
+        "imagenform formulario "
+        "imagenform formulario ";
+
+    grid-template-columns: 45% 45%;
+
+    grid-template-rows: 200px 150px 400px 300px;
+
+    /* acomodar el grid completo */
+    justify-content: center;
+    /* eje horizontal */
+    justify-items: center;
+    /* eje vertical */
+    align-items: center;
+
+    .solicita {
+        grid-area: solicita;
+        font-size: 4.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 3px 5px 2px #0428f7;
+
+    }
+
+    .ayudarte {
+        font-size: 3rem;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        grid-area: ayudarte;
+    }
+
+    .imagenform {
+        width: 80%;
+        height: 90%;
+        padding: 15px 0px 15px 0px;
+        border-radius: 0px 85px 0px 85px;
+        grid-area: imagenform;
+    }
+
+    .formulario {
+        width: 70%;
+        height: 80%;
+        border-radius: 31px 31px 31px 31px;
+        -webkit-border-radius: 31px 31px 31px 31px;
+        -moz-border-radius: 31px 31px 31px 31px;
+        font-size: 2rem;
+        text-align: left;
+        padding: 10px 10px 10px 30px;
+        grid-area: formulario;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background: #003bf1;
+        background: linear-gradient(40deg, #003bf1 0%, #e5eee5 80%);
+        background: -webkit-linear-gradient(40deg, #003bf1 0%, #e5eee5 80%);
+        background: -moz-linear-gradient(40deg, #003bf1 0%, #e5eee5 80%);
+
+    }
+
+}
+
+
+
+/*----------------Fin de seccion de Contactos-------------------------------*/

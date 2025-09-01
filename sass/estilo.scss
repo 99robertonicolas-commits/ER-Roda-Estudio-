@@ -1,0 +1,13 @@
+// comentario de scss
+
+// Enlace central de los estilos de las paginas
+
+@use "headerfooter";
+
+@use "main.scss";
+
+
+// Media queries 480px
+// Importante que vaya al final del todo
+@use "mediaQmobile.scss";
+

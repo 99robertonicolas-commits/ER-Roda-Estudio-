@@ -1,0 +1,107 @@
+/* ------------------Inicio de Header -----------------*/
+
+// Importacion de los estilos del header y footer 
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #456882;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+
+    /*----- Imgen del logo de la marca */
+    .logo {
+        width: 180px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    /*-------Titulo ER Estudio Roda */
+    .titulo {
+        width: 25%;
+        height: 80px;
+        color: white;
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* --------Menu de navegacion */
+    nav {
+        width: 50%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        /*-------Link padre de navegacion */
+        ul {
+            width: 95%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            text-decoration: none;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            /* link hijo de navegacion */
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.8rem;
+
+            }
+        }
+
+    }
+}
+
+/* ------------------Fin de Header -----------------*/
+
+/* ------------------Inicio de Footer -----------------*/
+
+footer {
+    width: 99%;
+    height: 100px;
+    background-color: #456882;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white
+}
+
+/*-----iconos de links a redes sociales de pie de pagina-------*/
+footer img,
+svg {
+    width: 60px;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+}
+
+/*----div class redes para modificar css en bloque-----*/
+.redes {
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*-------Icono de whatsapp flotante-------*/
+.wp {
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+}
+
+
+/* ----------------------- Fin de footer de pagina------------------------------------*/

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto /Estudio Roda</title>
-    <!--css-->
-    <link rel="stylesheet" href="../estilos/estilos.css">
+   
+ <!--link de hoja style en css----enlasada con scss--->
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
@@ -37,7 +39,7 @@
 
             <!-- Formulario contacto e imagen-->
 
-            <form action="procesar_formulario.php" method="post">
+            <form  class="formulario" action="procesar_formulario.php" method="post">
                 <label for="nombre">Nombre y Apellido:</label><br>
                 <input type="text" id="nombre" name="nombre"><br>
                 <label for="email">Correo electrónico:</label><br>
@@ -46,7 +48,7 @@
                 <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
                 <input type="submit" value="Enviar">
             </form>
-            <img src="../imagenes/imagenformulario.jpg" alt="rellenando formulario imagen ">
+            <img class="imagenform" src="../imagenes/imagenformulario.jpg" alt="rellenando formulario imagen ">
 
         </section>
 
