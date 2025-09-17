@@ -1,17 +1,8 @@
-/*----Comienzo de css mobile----*/
 
-/*------header para mobile------ */
-* {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    align-items: center;
+/* Media query para tablets */
+/* Dispositivos con un ancho entre 481px y 768px */
 
-    box-sizing: border-box;
-}
-
-@media (max-width: 480px) {
-
+@media (min-width: 481px) and (max-width: 768px) {
     header {
         z-index: 10;
         width: 100%;
@@ -24,7 +15,7 @@
 
         .logo {
             text-align: center;
-            width: 50px;
+            width: 60px;
             height: 50px;
             margin-top: 2px;
             margin-left: 2px;
@@ -39,7 +30,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            font-size: 20px;
+            font-size: 30px;
 
         }
 
@@ -61,13 +52,13 @@
 
                 li {
                     width: 90%;
-                    font-size: 10px;
+                    font-size: 15px;
 
                     /* link hijo de navegacion */
                     a {
                         width: 80%;
                         padding: 0px;
-                        font-size: 10px;
+                        font-size: 15px;
                     }
                 }
 
@@ -75,9 +66,11 @@
             }
         }
 
-        /*------fin de header para mobile-----*/
+        /*------fin de header para tables-----*/
 
     }
+
+    /*-----------------Main de la pagina-----------------------*/
 
     /*----seccion home que abarca toda la pagina de inicio en un solo bloque-----*/
 
@@ -98,7 +91,7 @@
         grid-template-columns: 90%;
 
         /* alto de cada columna */
-        grid-template-rows: 100px 40px 350px 400px 60px repeat(5, 350px);
+        grid-template-rows: 200px 60px 400px 380px 60px repeat(5, 350px);
 
         .homesession img {
             width: 100%;
@@ -108,11 +101,14 @@
         /*-----presen hace referencia al titulo de bienvenida de la pagina-----*/
         .animate__animated {
             padding: 2px;
-            font-size: 1rem;
+            font-size: 25px;
         }
 
         .titulo2 {
-            font-size: 0.8rem;
+            display: flex;
+            width: 100%;
+            height: 30px;
+            font-size: 15px;
         }
 
         /*----- breve info del nacimiento de roda estudio -------*/
@@ -121,58 +117,26 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            font-size: 17px;
+            font-size: 20px;
             font-weight: bold;
             padding: 2px;
 
         }
 
         .titulo3 {
-            font-size: 1rem;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
 
         }
 
     }
 
     /* --------------------------fin de main de Home----------------------*/
-
-    /*---------------Comienzo de seccion contenido de quienes somos 2 html de la pagina----------------------------*/
-
-    /*------------------------------------------------------------------------------Footer---------------------*/
-    footer {
-        width: 100%;
-        height: 100px;
-        padding: 0px;
-    }
-
-    footer p {
-        display: none;
-    }
-
-    /*-----iconos de links a redes sociales de pie de pagina-------*/
-    footer img,
-    svg {
-        width: 40px;
-    }
-
-    /*----div class redes para modificar css en bloque-----*/
-    .redes {
-        width: 60%;
-        height: 100px;
-        justify-content: space-evenly;
-    }
-
-    /*-------Icono de whatsapp flotante-------*/
-    .wp {
-        width: 40px;
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-
-    }
-
-    /* ----------------------- Fin de footer de pagina------------------------------------*/
-
     /*---------------Comienzo de seccion contenido de quienes somos 2 html de la pagina----------------------------*/
 
     .quienessomos {
@@ -207,13 +171,13 @@
         }
 
         .Daniela {
-            font-size: 2.5rem;
+            font-size: 2.7rem;
         }
 
         .parrafo1 {
             width: 100%;
             height: 100%;
-            font-size: 18px;
+            font-size: 20px;
             padding: 15px 5px 15px 30px;
         }
 
@@ -240,7 +204,7 @@
 
         grid-template-columns: 90%;
 
-        grid-template-rows: 150px 800px 400px 200px repeat(4, 300px) 150px;
+        grid-template-rows: 150px 800px 400px 200px repeat(4, 400px) 200px;
 
         .servicios img {
             width: 80%;
@@ -250,15 +214,15 @@
 
         .cetitulo {
             width: 90%;
-            font-size: 2.4rem;
+            font-size: 2.7rem;
             align-items: center;
 
         }
 
         .ceparrafo {
             width: 90%;
-            height: 90%;
-            font-size: 1rem;
+            height: 100%;
+            font-size: 20px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -339,14 +303,14 @@
         align-items: center;
 
         .aptitulo {
-            font-size: 1.9rem;
+            font-size: 2.5rem;
 
         }
 
         .aquien {
             width: 100%;
             height: 100%;
-            font-size: 20px;
+            font-size: 25px;
             flex-direction: column;
             justify-content: flex-start;
             text-align: center;
@@ -358,7 +322,7 @@
             width: 100%;
             height: 100%;
             margin: 10px 10px 10px 10px;
-            font-size: 16px;
+            font-size: 18px;
             justify-content: space-around;
             text-align: start;
         }
@@ -382,7 +346,7 @@
         }
 
         .analisisp {
-            font-size: 16px;
+            font-size: 20px;
         }
 
         .analisisc {
@@ -399,7 +363,7 @@
         }
 
         .revisionp {
-            font-size: 16px;
+            font-size: 20px;
 
         }
 
@@ -410,7 +374,6 @@
         }
 
     }
-
 
 
     /*----------------Fin de seccion Asesorias-------------------------------------*/
@@ -471,7 +434,7 @@
             width: 100%;
             height: 90%;
             padding: 0px 0px 30px 0px;
-            
+
             grid-area: imagenform;
         }
 
@@ -485,6 +448,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+
             input {
                 width: 100%;
                 height: 30px;
@@ -507,6 +471,40 @@
 
 
     /*----------------Fin de seccion de Contactos-------------------------------*/
+    /*------------------------------------------------------------------------------Footer---------------------*/
+    footer {
+        width: 100%;
+        height: 100px;
+        padding: 0px;
+    }
+
+    footer p {
+        display: none;
+    }
+
+    /*-----iconos de links a redes sociales de pie de pagina-------*/
+    footer img,
+    svg {
+        width: 40px;
+    }
+
+    /*----div class redes para modificar css en bloque-----*/
+    .redes {
+        width: 60%;
+        height: 100px;
+        justify-content: space-evenly;
+    }
+
+    /*-------Icono de whatsapp flotante-------*/
+    .wp {
+        width: 40px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+
+    }
+
+    /* ----------------------- Fin de footer de pagina------------------------------------*/
 
 
 }

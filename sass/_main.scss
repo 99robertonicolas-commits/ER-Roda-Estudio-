@@ -1,7 +1,7 @@
 main {
 
-    background-color: whitesmoke;
-    margin: 5px;
+    background-color: #F2F2F2;
+    margin: 1px;
 
 }
 
@@ -20,7 +20,7 @@ main {
     grid-template-columns: repeat(5, 18%);
 
     /* alto de cada columna */
-    grid-template-rows: 250px 80px 600px 200px 100px 300px;
+    grid-template-rows: 450px 70px 800px 230px 100px 400px;
 
     /* acomodar el grid completo */
     justify-content: center;
@@ -30,9 +30,9 @@ main {
     align-items: center;
 
     img {
-        width: 80%;
-        height: 90%;
-        padding: 10px 1px 10px 5px;
+        width: 90%;
+        height: 80%;
+        padding: 1px 1px 1px 1px;
         border-radius: 73px 73px 73px 73px;
         -webkit-border-radius: 73px 73px 73px 73px;
         -moz-border-radius: 73px 73px 73px 73px;
@@ -44,8 +44,8 @@ main {
 
     /*-----presen hace referencia al titulo de bienvenida de la pagina-----*/
     .animate__animated {
-        padding: 30px 10px 30px 70px;
-        font-size: 4rem;
+        padding: 20px 10px 30px 70px;
+        font-size: 5rem;
         color: black;
         align-items: center;
         font-family: 'Times New Roman', Times, serif;
@@ -56,8 +56,10 @@ main {
     }
 
     .titulo2 {
+        width: 90%;
+        background-color: #000000;
         font-size: 3rem;
-        color: rgb(5, 5, 5);
+        color: rgb(253, 249, 1);
         justify-content: center;
         align-items: center;
         border-radius: 74px 74px 74px 74px;
@@ -73,15 +75,25 @@ main {
 
     /*----- breve info del nacimiento de roda estudio -------*/
     .texto1 {
-        padding: 30px 10px 30px 70px;
+        width: 100%;
+        height: 100%;
+        background-image: url(../imagenes/banner.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 30px 10px 10px 30px;
         font-size: 2.5rem;
-        color: rgb(5, 5, 5);
+        color: black;
         justify-content: center;
         align-items: center;
         grid-area: texto1;
+        border-radius: 28px 28px 28px 28px;
+        -webkit-border-radius: 28px 28px 28px 28px;
+        -moz-border-radius: 28px 28px 28px 28px;
     }
 
     .titulo3 {
+        width: 90%;
         background-color: yellow;
         color: black;
         font-size: 3rem;
@@ -94,22 +106,32 @@ main {
 
     /*------------ Espesificacion de area de imagenes de clientes------------*/
     .cliente1 {
+        width: 90%;
+        height: 80%;
         grid-area: cliente1;
     }
 
     .cliente2 {
+        width: 90%;
+        height: 80%;
         grid-area: cliente2;
     }
 
     .cliente3 {
+        width: 90%;
+        height: 80%;
         grid-area: cliente3;
     }
 
     .cliente4 {
+        width: 90%;
+        height: 80%;
         grid-area: cliente4;
     }
 
     .cliente5 {
+        width: 90%;
+        height: 80%;
         grid-area: cliente5;
     }
 }
@@ -127,7 +149,7 @@ main {
 
     grid-template-columns: 45% 45%;
 
-    grid-template-rows: 350px 500px;
+    grid-template-rows: 600px 700px;
 
     /* acomodar el grid completo */
     justify-content: center;
@@ -137,17 +159,24 @@ main {
     align-items: center;
 
     img {
-        width: 40%;
-        height: 95%;
+        width: 60%;
+        height: 90%;
         padding: 15px 0px 15px 0px;
         border-radius: 0px 85px 0px 85px;
+
+        
     }
 
     .Daniela {
+        width: 100%;
+        height: 100%;
         color: black;
-        font-size: 4rem;
+        font-size: 7rem;
         color: #000000;
         text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
     }
 
@@ -156,7 +185,7 @@ main {
     }
 
     .parrafo1 {
-        font-size: 1.5rem;
+        font-size: 29px;
         line-height: 1.4;
         text-align: left;
         padding: 10px 10px 10px 30px;
@@ -205,7 +234,7 @@ main {
         flex-direction: row;
         justify-content: center;
         grid-area: cetitulo;
-        font-size: 4rem;
+        font-size: 6rem;
         align-items: center;
         letter-spacing: .15em;
         color: #333333;
@@ -389,31 +418,32 @@ main {
     .aquien {
         background-color: antiquewhite;
         width: 100%;
-        height: 90%;
-        padding: 10px 0px 10px 5px;
+        height: 100%;
+        padding: 20px 0px 10px 5px;
         font-size: 1.6rem;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline solid;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
-        border-radius: 24px 0px 0px 24px;
+        border-radius: 4px 0px 0px 4px;
 
         grid-area: aquienp;
     }
 
     .aquienul {
         background-color: antiquewhite;
-        width: 95%;
-        height: 50%;
-        padding: 0px 0px 10px 5px;
+        width: 100%;
+        height: 47%;
+        padding: 0px 0px 10px 20px;
         font-size: 1.2rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: start;
         font-family: Arial, Helvetica, sans-serif;
         list-style: disc inside;
+        font-weight: bold;
 
         grid-area: aquienp;
     }
@@ -421,7 +451,7 @@ main {
     .aquienimg {
         background-color: antiquewhite;
         width: 100%;
-        height: 95%;
+        height: 100%;
         border-radius: 0px 24px 24px 0px;
         grid-area: aquienimg;
     }
@@ -542,7 +572,7 @@ main {
 
     grid-template-columns: 45% 45%;
 
-    grid-template-rows: 200px 150px 400px 300px;
+    grid-template-rows: 300px 150px 500px 200px;
 
     /* acomodar el grid completo */
     justify-content: center;
@@ -550,51 +580,59 @@ main {
     justify-items: center;
     /* eje vertical */
     align-items: center;
+    background-image: url(../imagenes/banner.jpg);
+    background-size: cover;
+    background-position: center;
 
     .solicita {
+        width: 100%;
+        height: 100%;
+        text-decoration: underline solid;
         grid-area: solicita;
-        font-size: 4.5rem;
+        font-size: 5rem;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
-        text-shadow: 3px 5px 2px #0428f7;
+        text-shadow: 3px 5px 2px #f5f8f8;
 
     }
 
     .ayudarte {
-        font-size: 3rem;
-        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 3.5rem;
+        text-align: start;
         padding: 10px 10px 10px 10px;
         grid-area: ayudarte;
     }
 
     .imagenform {
-        width: 80%;
-        height: 90%;
-        padding: 15px 0px 15px 0px;
-        border-radius: 0px 85px 0px 85px;
+        width: 70%;
+        height: 60%;
+        padding: 0px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
         grid-area: imagenform;
     }
 
     .formulario {
-        width: 70%;
-        height: 80%;
-        border-radius: 31px 31px 31px 31px;
-        -webkit-border-radius: 31px 31px 31px 31px;
-        -moz-border-radius: 31px 31px 31px 31px;
+        width: 100%;
+        height: 100%;
         font-size: 2rem;
         text-align: left;
-        padding: 10px 10px 10px 30px;
+        padding: 1px 10px 10px 0px;
         grid-area: formulario;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: flex-start;
-        background: #003bf1;
-        background: linear-gradient(40deg, #003bf1 0%, #e5eee5 80%);
-        background: -webkit-linear-gradient(40deg, #003bf1 0%, #e5eee5 80%);
-        background: -moz-linear-gradient(40deg, #003bf1 0%, #e5eee5 80%);
+
 
     }
 

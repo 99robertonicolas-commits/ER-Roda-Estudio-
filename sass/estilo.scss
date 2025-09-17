@@ -6,8 +6,13 @@
 
 @use "main.scss";
 
-
-// Media queries 480px
 // Importante que vaya al final del todo
+
+// Media queries 320px a 480px
 @use "mediaQmobile.scss";
+
+// Media queries 481px a  768px
+@use "mediaQtablet.scss";   
+
+
 
