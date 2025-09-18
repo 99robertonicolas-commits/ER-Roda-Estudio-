@@ -1,5 +1,4 @@
-
-*{
+* {
 
     margin: 0;
     padding: 0;
@@ -8,68 +7,510 @@
 }
 
 /* Media query para notebooks */
-/* Dispositivos con un ancho entre 769px y 1024px */    
+/* Dispositivos con un ancho entre 769px y 1024px */
 
-@media (min-width: 769px) and (max-width: 1024px) {
-
-   
-header {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: sticky;
-    top: 0px;
-    z-index: 10;
-
-    /*----- Imgen del logo de la marca */
-    .logo {
-        width: 60px;
-    
-    }
-    /*-------Titulo ER Estudio Roda */
-    .titulo {
+@media (min-width: 769px) and (max-width: 1279px) {
+    header {
         width: 100%;
-        height: 80px;
-        font-size: 1.5rem;
-       
+        height: auto;
+        position: sticky;
+        top: 0px;
+        z-index: 10;
 
-    /* --------Menu de navegacion */
-    nav {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-        /*-------Link padre de navegacion */
-        ul {
+        .mi-navbar {
             width: 100%;
-            height: 90%;
+            height: 100%;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+            background-color: #E4E0E1;
             display: flex;
-            flex-direction: row;
-            list-style: none;
-            text-decoration: none;
-            justify-content: space-evenly;
+            flex-direction: column;
+            justify-content: space-around;
             align-items: center;
-            margin-right: 10px;
-            font-family: Arial, Helvetica, sans-serif;
 
-            /* link hijo de navegacion */
+            img {
+                width: 100px;
+                height: 80px;
+            }
+
             a {
                 color: black;
                 text-decoration: none;
-                font-size: 1.4rem;
-                 font-weight: bold;
-                
+                font-size: 25px;
+                font-weight: bold;
+
+            }
+
+        }
+
+    }
+
+    /* ------------------Fin de Header -----------------*/
+
+    /* ------------------Inicio de Footer -----------------*/
+
+    footer {
+        width: 100%;
+        height: 100px;
+        background-color: #424242;
+        padding: 0px 10px 0px 10px;
+        align-items: center;
+        font-size: 1rem;
+        color: white
+    }
+
+    /*-----iconos de links a redes sociales de pie de pagina-------*/
+    footer img,
+    svg {
+        width: 50px;
+        border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+    }
+
+    /*----div class redes para modificar css en bloque-----*/
+    .redes {
+        align-items: center;
+        width: 70%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*-------Icono de whatsapp flotante-------*/
+    .wp {
+        position: fixed;
+        bottom: 28px;
+        right: 60px;
+    }
+
+    /* ----------------------- Fin de footer de pagina------------------------------------*/
+
+    /*----seccion home que abarca toda la pagina de inicio en un solo bloque-----*/
+    .homesession {
+        display: grid;
+        grid-template-areas:
+            "animate__animated animate__animated animate__animated animate__animated animate__animated"
+            "titulo2 titulo2 titulo2 titulo2 titulo2"
+            "imagen1 imagen1 imagen1 imagen1 imagen1"
+            "texto1 texto1 texto1 texto1 texto1"
+            "titulo3 titulo3 titulo3 titulo3 titulo3"
+            "cliente1 cliente2 cliente3 cliente4 cliente5";
+        /*-- ancho de cada columna */
+        grid-template-columns: repeat(5, 18%);
+
+        /* alto de cada columna */
+        grid-template-rows: 450px 70px 800px 300px 200px 400px;
+
+        /* acomodar el grid completo */
+        justify-content: center;
+        /* eje horizontal */
+        justify-items: center;
+        /* eje vertical */
+        align-items: center;
+
+        img {
+            width: 90%;
+            height: 80%;
+            padding: 1px 1px 1px 1px;
+            border-radius: 73px 73px 73px 73px;
+            -webkit-border-radius: 73px 73px 73px 73px;
+            -moz-border-radius: 73px 73px 73px 73px;
+            box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+            -webkit-box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+            -moz-box-shadow: -1px 6px 72px 14px rgba(0, 0, 0, 0.83);
+            align-items: center;
+        }
+
+        /*-----presen hace referencia al titulo de bienvenida de la pagina-----*/
+        .animate__animated {
+            font-size: 3rem;
+            color: black;
+
+        }
+
+        .titulo2 {
+            padding: 1px 1px 1px 1px;
+            width: 90%;
+            height: 90%;
+            font-size: 1.8rem;
+        }
+
+        /*-----imagen representativa del titulo de bienvenida de la pagina-----*/
+        .imagen1 {
+            padding: 1px 1px 1px 1px;
+            grid-area: imagen1;
+        }
+
+        /*----- breve info del nacimiento de roda estudio -------*/
+        .texto1 {
+            padding: 1px 1px 1px 1px;
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+        }
+
+        .titulo3 {
+            width: 90%;
+            height: 80%;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 1px 1px 1px 1px;
+
+        }
+
+        /*------------ Espesificacion de area de imagenes de clientes------------*/
+        .cliente1 {
+            width: 90%;
+            height: 60%;
+            grid-area: cliente1;
+            padding: 1px 1px 1px 1px;
+        }
+
+        .cliente2 {
+            width: 90%;
+            height: 60%;
+            grid-area: cliente2;
+            padding: 1px 1px 1px 1px;
+        }
+
+        .cliente3 {
+            width: 90%;
+            height: 60%;
+            grid-area: cliente3;
+            padding: 1px 1px 1px 1px;
+        }
+
+        .cliente4 {
+            width: 90%;
+            height: 60%;
+            grid-area: cliente4;
+            padding: 1px 1px 1px 1px;
+        }
+
+        .cliente5 {
+            width: 90%;
+            height: 60%;
+            grid-area: cliente5;
+            padding: 1px 1px 1px 1px;
+        }
+    }
+
+    /* --------------------------fin de main de Home----------------------*/
+
+    /*---------------Comienzo de seccion contenido de quienes somos 2do html de la pagina----*/
+
+    .quienessomos {
+        display: grid;
+        grid-template-areas:
+
+            "Daniela fotodani"
+            "familia parrafo1";
+
+        grid-template-columns: 45% 45%;
+
+        grid-template-rows: 600px 700px;
+
+        /* acomodar el grid completo */
+        justify-content: center;
+        /* eje horizontal */
+        justify-items: center;
+        /* eje vertical */
+        align-items: center;
+
+        img {
+            width: 60%;
+            height: 90%;
+
+        }
+
+        .Daniela {
+            font-size: 4rem;
+        }
+
+        .parrafo1 {
+            width: 100%;
+            height: 90%;
+            font-size: 24px;
+        }
+
+    }
+
+    /*-------- Fin de seccion de Quienes somos----------------------------------*/
+    /*--------------Inicio de Servicios----------------------------------------*/
+
+    .servicios {
+        display: grid;
+        grid-template-areas:
+            "cetitulo  cetitulo  cetitulo  cetitulo"
+            "ceparrafo  ceparrafo  unioneuropea unioneuropea "
+            "h4  h4  h4 h4 "
+            "española  italiana polaca alemana "
+            "contratanos contratanos contratanos contratanos ";
+
+        grid-template-columns: repeat(4, 23%);
+
+        grid-template-rows: 150px 700px 130px 400px 200px;
+
+        /* acomodar el grid completo */
+        justify-content: center;
+        /* eje horizontal */
+        justify-items: center;
+        /* eje vertical */
+        align-items: center;
+
+        .servicios img {
+            width: 80%;
+            height: 70%;
+
+        }
+
+        .cetitulo {
+            width: 90%;
+            font-size: 4.4rem;
+            align-items: center;
+
+        }
+
+        .ceparrafo {
+            width: 90%;
+            height: 90%;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+
+        .ceparrafo h2 {
+            width: 100%;
+            font-size: 1.3rem;
+        }
+
+        .ceparrafo ul {
+            width: 90%;
+            height: 90%;
+            font-size: 20px;
+            padding: 10px 2px 5px 17px;
+            line-height: normal;
+            list-style: disc inside;
+            text-align: left;
+
+            .li {
+                text-align: left;
+                font-size: 1rem;
 
             }
         }
 
-    }
-   }
-}
+        .ceparrafo h3 {
+            width: 90%;
+            padding: 6px 2px 10px 1px;
+            font-size: 1.2rem;
 
-    
+        }
+
+        .h4 {
+            font-size: 2rem;
+        }
+
+        .es {
+            font-size: 1.3rem;
+        }
+
+        .it {
+            font-size: 1.3rem;
+
+        }
+
+        .po {
+            font-size: 1.3rem;
+
+        }
+
+        .al {
+            font-size: 1.3rem;
+        }
+
+        .contratanos {
+            width: 80%;
+            height: 80%;
+            font-size: 2rem;
+
+        }
+
+    }
+
+    /*-------------Fin de seccion de Servicios--------------------------------*/
+
+    /*----------------Inicio de seccion Asesorias---------------------------------*/
+    .asesorias {
+
+        display: grid;
+        grid-template-areas:
+            "aptitulo aptitulo aptitulo"
+            "aquienp aquienp aquienimg"
+            "at at at  "
+            "analisis analisisp analisisc "
+            "revision revisionp revisionc "
+        ;
+        grid-template-columns: 25% 40% 25%;
+
+        grid-template-rows: 200px 300px 150px 300px 300px;
+        /* acomodar el grid completo */
+        justify-content: center;
+        /* eje horizontal */
+        justify-items: center;
+        /* eje vertical */
+        align-items: center;
+
+        .aptitulo {
+            font-size: 3rem;
+
+        }
+
+        .aquien {
+            width: 100%;
+            height: 100%;
+            font-size: 1.4rem
+        }
+
+        .aquienul {
+            width: 100%;
+            height: 47%;
+            margin: 10px 10px 10px 10px;
+            font-size: 1.1rem
+        }
+
+        .aquienimg {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .at {
+            width: 90%;
+            height: 90%;
+            font-size: 1.8rem;
+
+        }
+
+        .analisis {
+            font-size: 1.4rem;
+
+        }
+
+        .analisisp {
+            font-size: 20px;
+        }
+
+        .analisisc {
+            height: 80%;
+            font-size: 1.3rem;
+
+        }
+
+        .revision {
+            width: 90%;
+            height: 90%;
+            font-size: 1.4rem;
+
+        }
+
+        .revisionp {
+            font-size: 20px;
+
+        }
+
+        .revisionc {
+            height: 80%;
+            font-size: 1.3rem;
+
+        }
+
+
+    }
+
+    /*----------------Fin de seccion Asesorias-------------------------------------*/
+
+
+    /*----------------Inicio de seccion Contactos-----------------------------------*/
+
+    .contactos {
+        display: grid;
+        grid-template-areas:
+            "solicita solicita "
+            "imagenform ayudarte "
+            "imagenform formulario "
+            "imagenform formulario ";
+
+        grid-template-columns: 45% 45%;
+
+        grid-template-rows: 300px 150px 500px 200px;
+
+        /* acomodar el grid completo */
+        justify-content: center;
+        /* eje horizontal */
+        justify-items: center;
+        /* eje vertical */
+        align-items: center;
+        background-image: url(../imagenes/banner.jpg);
+        background-size: cover;
+        background-position: center;
+
+        .solicita {
+            width: 100%;
+            height: 90%;
+            text-decoration: underline solid;
+            grid-area: solicita;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-shadow: 3px 5px 2px #f5f8f8;
+
+        }
+
+        .ayudarte {
+            width: 100%;
+            height: 100%;
+            font-size: 1.5rem;
+
+        }
+
+        .imagenform {
+            width: 100%;
+            height: 60%;
+        }
+
+        .formulario {
+            width: 90%;
+            height: 80%;
+            font-size: 1.2rem;
+
+            input {
+                width: 100%;
+                height: 30px;
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 150px;
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+
+
+
+        }
+
+
+    }
 }
